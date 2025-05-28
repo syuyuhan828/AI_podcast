@@ -26,7 +26,7 @@ firstClone.style.width = "150vw";
 firstClone.style.height = "150vh";
 firstClone.innerHTML = "&nbsp;"
 firstClone.style.overflow = "hidden";
-firstClone.style.background = "url('../img/start_bg.png') center / cover no-repeat"
+firstClone.style.background = "url('./img/start_bg.png') center / cover no-repeat"
 const firstObj = new CSS3DObject(firstClone);
 firstObj.position.set(0, 0, 0);
 scene.add(firstObj);
@@ -39,7 +39,7 @@ lastImgClone.style.width = "150vw";
 lastImgClone.style.height = "150vh";
 lastImgClone.innerHTML = "&nbsp;"
 lastImgClone.style.overflow = "hidden";
-lastImgClone.style.background = "url('../img/bg_space.png') center / cover no-repeat"
+lastImgClone.style.background = "url('./img/bg_space.png') center / cover no-repeat"
 const lastImgObj = new CSS3DObject(lastImgClone);
 lastImgObj.position.set(0, 0, -100);
 scene.add(lastImgObj);
@@ -51,7 +51,7 @@ const rabbitImgClone = rabbitImg.cloneNode(true);
 rabbitImgClone.style.position = 'fixed';
 rabbitImgClone.style.width = "400px";
 rabbitImgClone.style.height = "400px";
-rabbitImgClone.style.backgroundImage = "url('../img/weflow-avatar.png')"
+rabbitImgClone.style.backgroundImage = "url('./img/weflow-avatar.png')"
 rabbitImgClone.style.transformOrigin = "bottom left"
 const rabbitImgObj = new CSS3DObject(rabbitImgClone);
 rabbitImgObj.position.set(30, -15, 60);
@@ -77,7 +77,7 @@ gsap.to(rabbitImgObj.element, 2, {
 const sloganImg = document.querySelector(".sloganImgContainer");
 const sloganImgClone = sloganImg.cloneNode(true);
 sloganImgClone.style.width = 'fixed';
-sloganImgClone.style.backgroundImage = "url('../img/weflow-slogan.png')"
+sloganImgClone.style.backgroundImage = "url('./img/weflow-slogan.png')"
 sloganImgClone.style.backgroundPosition = 'center';
 sloganImgClone.style.backgroundSize = 'contain';
 sloganImgClone.style.backgroundRepeat = 'no-repeat';
