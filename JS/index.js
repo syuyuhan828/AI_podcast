@@ -26,7 +26,7 @@ firstClone.style.width = "150vw";
 firstClone.style.height = "150vh";
 firstClone.innerHTML = "&nbsp;"
 firstClone.style.overflow = "hidden";
-firstClone.style.background = "url('../img/start-bg.webp') center / cover no-repeat"
+firstClone.style.background = "url('../img/start_bg.png') center / cover no-repeat"
 const firstObj = new CSS3DObject(firstClone);
 firstObj.position.set(0, 0, 0);
 scene.add(firstObj);
@@ -39,7 +39,7 @@ lastImgClone.style.width = "150vw";
 lastImgClone.style.height = "150vh";
 lastImgClone.innerHTML = "&nbsp;"
 lastImgClone.style.overflow = "hidden";
-lastImgClone.style.background = "url('../img/bg_space.webp') center / cover no-repeat"
+lastImgClone.style.background = "url('../img/bg_space.png') center / cover no-repeat"
 const lastImgObj = new CSS3DObject(lastImgClone);
 lastImgObj.position.set(0, 0, -100);
 scene.add(lastImgObj);
