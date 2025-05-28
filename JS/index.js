@@ -492,7 +492,7 @@ function animate(){
 
 
 
-window.addEventListener("load", ()=>{
-    animate();
-})
-// animate();
+// window.addEventListener("load", ()=>{
+//     animate();
+// })
+animate();
