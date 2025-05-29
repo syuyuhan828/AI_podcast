@@ -371,6 +371,7 @@ body{
     top: 70vh;
     left: 0;
     animation: toolkitFloat 4s ease-in-out infinite;
+    -webkit-user-drag: none;
 }
 
 .floatAvatar{
@@ -379,4 +380,5 @@ body{
     top: 95vh;
     left: 70vh;
     animation: avatarFloat 3s ease-in-out infinite;
+    -webkit-user-drag: none;
 }

@@ -1,13 +1,10 @@
-* {
-    box-sizing: border-box;
-}
 
 body, html {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: #11183C;
     font-family: Arial, sans-serif;
     position: static;
 }
@@ -28,17 +25,17 @@ body, html {
 }
 
 .wave-path-1 {
-    stroke: #ff3131;
+    stroke: #767DBF;
     fill: none;
     stroke-width: 2;
-    filter: drop-shadow(0 0 6px #ff3131) drop-shadow(0 0 10px #ff3131);
+    filter: drop-shadow(0 0 6px #767DBF) drop-shadow(0 0 10px #767DBF);
 }
 
 .wave-path-2 {
-    stroke: #151bf4;
+    stroke: #D5B3CE;
     fill: none;
     stroke-width: 2;
-    filter: drop-shadow(0px 0px 8px #151bf4) drop-shadow(0px 0px 16px #151bf4);
+    filter: drop-shadow(0px 0px 8px #D5B3CE) drop-shadow(0px 0px 16px #D5B3CE);
 }
 
 .wave-path-3 {

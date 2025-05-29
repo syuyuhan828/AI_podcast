@@ -327,7 +327,7 @@ const servicePlanetClone = servicePlanetImg.cloneNode(true);
 servicePlanetClone.style.position = "fixed";
 servicePlanetClone.style.width = "800px";
 servicePlanetClone.style.height = "800px";
-servicePlanetClone.style.background = 'url("../img/service-planet.png") center / cover no-repeat';
+servicePlanetClone.style.background = 'url("./img/service-planet.png") center / cover no-repeat';
 servicePlanetClone.style.opacity = "1";
 const servicePlanetObj = new CSS3DObject(servicePlanetClone);
 servicePlanetObj.position.set(500, -200, 0);
