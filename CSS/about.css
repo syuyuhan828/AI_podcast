@@ -28,6 +28,8 @@ body{
     width: 100%;
     z-index: -1;
     -webkit-user-drag: none;
+    vertical-align: middle;
+    object-fit: contain;
 }
 
 /* header CSS */
@@ -247,7 +249,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 75%;
+    margin-left: 12.5%;
     overflow: visible;
 }
 
