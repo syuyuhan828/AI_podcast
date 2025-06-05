@@ -8,23 +8,98 @@
     <!-- <link rel="stylesheet" href="./CSS/reset.css"> -->
     <link rel="stylesheet" href="./CSS/index.css">
     <style>
-        .header-nav-list-cv #login::before{
-            content: "";
-            display: inline-block;
-            background: url("/img/login-icon.png");
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain;
-            width: 20px;
-            height: 20px;
-            margin: auto 5px;
-            vertical-align: middle;
+        :root{
+    --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
+        html{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+            /* header CSS */
+        .header{
+            width: 100%;
+            position: fixed;
+            margin-top: 0;
+            top: 0;
+            z-index: 9999;
+            background-color: transparent;
+        }
+
+        .header-Wrapper {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: flex-start;
+            margin: 5vh auto auto;
+        }
+
+        .header-nav {
+            flex: 1 0 auto;
+            margin-left: 40px;
+        }
+
+        .header-nav ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+        }
+
+        .header-nav-list li{
+            margin: 0 15px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        .header-nav-list li::after{
+            content: "";
+            display: block; 
+            height: 2px;
+            width: 0%;
+            background-color: #fff;
+            transition: .3s;
+        }
+        .header-nav-list li:hover::after{
+            width: 100%;
+        }
+
+        .header-nav-list li a{
+            text-decoration: none;
+            color: white;
+            font-family: var(--font);
+        }
+
+        .header-nav-list-cv{
+            display: flex;
+            margin-left: auto;
+            margin-right: 5px;
+            filter: brightness(0) invert(1); /* 將 SVG 變為白色 */
+        }
+
+        .header-nav-list-cv li{
+            display: flex;
+            flex-wrap: nowrap;
+            list-style-type: none;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 18px;
+
+        }
+
+        /* Don't overwrite it here */
         .header-nav-list-cv #contact::before{
             content: "";
             display: inline-block;
-            background-image: url("/img/contact-icon.svg");
+            background-image: url("./img/contact-icon.svg");
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain;
@@ -35,6 +110,54 @@
             
         }
 
+        /* Don't overwrite it here */
+        .header-nav-list-cv #login::before{
+            content: "";
+            display: inline-block;
+            background: url("./img/login-icon.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+            margin: auto 5px;
+            vertical-align: middle;
+            
+        }
+
+
+        .header-nav-list-item a{
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 15px;
+            border: 2px solid #fff;
+            border-radius: 40px;
+            font-family: var(--font);
+
+            
+        }
+
+        .scrollController{
+            height: 700vh;
+            /* font-family: var(--font); */
+        }
+
+        .IMG{
+            display: flex; 
+        }
+
+        .firstImg{
+            position: absolute;
+            background: url("./img/start_bg.png") center / cover no-repeat;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .lastImg{
+            background: url("./img/bg_space.png") center / cover no-repeat;
+            width: 100vw;
+            height: 100vh;
+        }
 
     </style>
 </head>
