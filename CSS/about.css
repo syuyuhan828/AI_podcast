@@ -21,15 +21,18 @@ html{
 body{
     margin: 0;
     padding: 0;
+    position: relative;
 }
+
+
 
 .aboutBg img{
     position: absolute;
-    width: 100%;
+    height: 100%;
     z-index: -1;
     -webkit-user-drag: none;
     vertical-align: middle;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 /* header CSS */
